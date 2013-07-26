@@ -31,6 +31,11 @@
 
 <style>
 
+    section.present { background-color: rgba(0,0,0,0.5); }
+    section.present tr:hover { background-color: rgba(255,255,255,0.5); }
+    section.present #year { width:15% }
+    .left * { text-align: left }
+
     .fade {
        opacity: 0.8;
        transition: opacity .25s ease-in-out;
@@ -91,53 +96,80 @@ i[class*='icon-']:hover{background-position:center top}
 					<h1 id="name">&nbsp;</h1>
 					<h3 id="tagline">The Hungry Fighter</h3>
 				</section>
-                <section data-markdown data-background="/img/bg/2.jpg" data-background-transition="none">
+                <section data-markdown data-background="/img/bg/2.jpg">
                   # Hungry
-                  ##Desire to **Learn**
-                  ##Desire to _Know_
-                  ##Desire to _**Win**_
+                  [def'n](http://www.google.com/search?q=define%3A+hungry)
+                  ###Desire to **Learn**
+                  ###Desire to _Know_
+                  ###Desire to _**Win**_
                 </section>
                 <section data-markdown data-background="/img/bg/2.jpg">
                   # Fighter
-                  ##Just keep moving
-                  ##No giving up
+                  ###Just keep moving
+                  ###No giving up
                 </section>
                     <section data-markdown>
                       ## choose your adventure
-                      ##[personal](/#/4/)=>
-                      ##[professional](/#/5/)=>
+                      ***
+                      ##[awards](/#/4/)=>
+                      ##[personal](/#/5/)=>
+                      ##[professional](/#/6/)=>
                     </section>
+                <section>
+                    <section data-markdown>
+                      # Awards
+                      ###Loud and Proud
+                    </section>
+                    <section data-markdown data-state="left">
+                            ### 2009
+                            > Western Regional Finalists in [Enterprize](http://enterprizecanada.org/") Business Plan Competition
+
+                            ### 2008
+                            > Obtained [DB2](http://www-01.ibm.com/software/data/db2/") 9 Family Fundamentals Certification
+
+                            ### 2004
+                            > Completed Advanced Leadership Skills training ([Wood Badge](http://en.wikipedia.org/wiki/Wood_Badge_(Boy_Scouts_of_America)))
+                    </section>
+                    <section data-markdown data-state="left">
+                            ### 2003
+                            > Placed in the 92.2th percentile in the Leonardo Da Vinci Competition
+
+                            ### 2002
+                            > Earned the [Queen's Venturer Award](http://en.wikipedia.org/wiki/Queen's_Venturer_Award)
+                            > Received the Silver [Duke of Edinburgh's Award](http://en.wikipedia.org/wiki/The_Duke_of_Edinburgh's_Award)
+
+                            ### 98-02
+                            > Received Certificate of Distinction in [Gauss, Pascal, Cayley, and Euclid](http://www.cemc.uwaterloo.ca/contests/contests.html)
+                    </section>
+                </section>
         		<section>
                     <section data-markdown>
-                      ## Personal
-                      What a guy
+                      # Personal
+                      ###What a guy
                     </section>
                     <section data-markdown data-background="/img/bg/d90mirror.jpg">
-                      ## He Shoots
-
-<i class="icon-camera-retro"></i> Test
-
-                      with his Nikon D90
+                      # He Shoots
+                      ###with his Nikon D90
+                      ###Tamron 17-50mm f/2.8 lens 
                     </section>
         		    <section data-markdown>
-                      ## He Moves
-                      He hikes, swims, and play balls
+                      # He Moves
+                      ###He hikes, swims, and play balls
 				    </section>
         		    <section data-markdown>
-                      ## He Does
+                      # He Does
                       ### Software/Hardware/Business 
 				    </section>
         		    <section data-markdown>
                       ## He's a Generalist, a Do-It-All
-                      He Breaks Things
-
-                      He Makes Things
+                      ###He Breaks Things
+                      ###He Makes Things
 				    </section>
 				</section>
         		<section>
         		    <section data-markdown>
-                        ## Professional
-                        Walk into History
+                        # Professional
+                        ###Walk into History
 				    </section>
                 <section data-markdown>
                   ## Bachelor of Applied Science @UBC
@@ -153,7 +185,7 @@ i[class*='icon-']:hover{background-position:center top}
                             <!--<div><iframe width="500" height="250" src="https://www.youtube-nocookie.com/embed/n_aKBJNovdU?feature=player_embedded" frameborder="0" allowfullscreen ></iframe></div>-->
                         </div>
 <br />
-        		        <div class="fragment">
+        		        <div class="fragment roll-in">
                             <h3><a href="http://www.netapp.com">NetApp</a> - 2010 to 2012</h3>
                             <h4>Technical Architect for <a href="http://www.netapp.com/us/products/storage-systems/index.aspx">Data Storage Systems</a> in Healthcare</h4>
                         </div>
@@ -164,11 +196,20 @@ i[class*='icon-']:hover{background-position:center top}
                             <h4>Solution Engineer for <a href="http://www.netapp.com/us/products/storage-software/storagegrid/">StorageGRID System</a></h4>
                         </div>
 <br />
-        		        <div class="fragment">
+        		        <div class="fragment roll-in">
                             <h3><a href="http://www.ibm.com/ca/en/">IBM</a> - 2007 to 2009</h3>
                             <h4>Compiler Test for <a href="http://www-03.ibm.com/software/products/us/en/ccompfami/">XL C/C++</a> on Linux/AIX (Cell, Blue Gene, x86)</h4>
                         </div>
                     </section>
+				</section>
+
+				<section data-markdown>
+					## Quotes to live by
+					&ldquo;If not now, When?&rdquo;
+
+					&ldquo;I think I can, I think I can.&rdquo;
+
+					&ldquo;Where there is no struggle, there is no strength.&rdquo;
 				</section>
 
 				<section>
@@ -215,15 +256,6 @@ i[class*='icon-']:hover{background-position:center top}
 </p>
 				</section>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
 				<section data-state="customevent">
 					<h2>Custom Events</h2>
 					<p>
@@ -235,54 +267,6 @@ Reveal.addEventListener( 'customevent', function() {
 } );
 					</code></pre>
 				</section>
-				<section data-markdown>
-					## Quotes to live by
-					> &ldquo;If not now, When?&rdquo;
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
-
 				<section>
 					<h2>Export to PDF</h2>
 					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
@@ -293,25 +277,7 @@ Reveal.addEventListener( 'customevent', function() {
 				</section>
 
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
-
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
+					<h1>Come Again</h1>
 				</section>
 
 			</div>
