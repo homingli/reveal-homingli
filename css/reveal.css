@@ -30,7 +30,7 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/*font: inherit;*/
 	vertical-align: baseline;
 }
 
@@ -222,9 +222,8 @@ body {
 .reveal b {
 	font-weight: bold;
 }
-
-.reveal em,
-.reveal i {
+/* .reveal i , */
+.reveal em{
 	font-style: italic;
 }
 
